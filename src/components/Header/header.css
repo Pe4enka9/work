@@ -1,0 +1,14 @@
+header div {
+  font-size: 1.4rem;
+}
+
+header hr {
+  margin: 1rem 0;
+  border: 0.2rem solid #2581D5;
+  border-bottom: 0;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=header.css.map */

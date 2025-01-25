@@ -1,0 +1,15 @@
+@import "../../variables";
+
+header div {
+  font-size: 1.4rem;
+}
+
+header hr {
+  margin: 1rem 0;
+
+  border: .2rem solid $main;
+  border-bottom: 0;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
