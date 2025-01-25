@@ -1,0 +1,17 @@
+.input {
+  width: 20rem;
+  padding: 0.2em 0.5em;
+  outline: none;
+  border: 0.2rem solid #ccc;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: #2581D5;
+}
+
+/*# sourceMappingURL=input.module.css.map */

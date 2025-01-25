@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.input {
+  width: 20rem;
+
+  padding: .2em .5em;
+
+  outline: none;
+  border: .2rem solid #ccc;
+  -webkit-border-radius: .7rem;
+  -moz-border-radius: .7rem;
+  border-radius: .7rem;
+  
+  font-size: 1.8rem;
+
+  transition: border-color .2s ease-in-out;
+}
+
+.input:focus {
+  border-color: $main;
+}

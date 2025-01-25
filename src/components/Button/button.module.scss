@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.btn {
+  width: fit-content;
+
+  padding: .3em .7em;
+
+  color: #fff;
+  background-color: $main;
+
+  outline: none;
+  border: none;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.btn:hover {
+  background-color: $buttonHover;
+}
