@@ -30,6 +30,10 @@ export default function App() {
         }
     };
 
+    const handleForm = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <div className="container">
             <Header/>
@@ -37,11 +41,18 @@ export default function App() {
 
             <h2 className="mb-2">Твоя оплата в час: {currentSalary}</h2>
 
-            <div className="input-container">
+            <div className="input-container mb-2">
                 <Label htmlFor="salary">Зарплата в час</Label>
                 <Input type="number" name="salary" id="salary" value={salary} onChange={handleChange}/>
                 <Button onClick={handleButton}>Сохранить</Button>
             </div>
+
+            <form onSubmit={handleForm}>
+                <div className="input-container">
+                    <Label htmlFor="whatDid">Что сделал</Label>
+                    <Input type="text" name="whatDid" id="whatDid"/>
+                </div>
+            </form>
         </div>
     )
 }
