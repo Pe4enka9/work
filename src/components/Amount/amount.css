@@ -1,0 +1,14 @@
+#amount {
+  width: fit-content;
+  height: fit-content;
+  padding: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  background-color: #7CA4CC;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=amount.css.map */
