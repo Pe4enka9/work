@@ -23,12 +23,12 @@ h2 {
   font-weight: 500;
 }
 
-p, label, input, .btn {
+p, label, input, select, option, .btn {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-input {
+input, select {
   min-width: 20rem;
   width: fit-content;
   padding: 0.7rem 1rem;
@@ -39,13 +39,20 @@ input {
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   border-radius: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   transition: border-color 0.5s ease;
 }
-input:focus {
+input:focus, select:focus {
   border-color: #672CE2;
 }
-input::placeholder {
+input::placeholder, select::placeholder {
   color: #808080;
+}
+
+option {
+  color: #000000;
 }
 
 main {
@@ -61,6 +68,24 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
+}
+
+.select-container {
+  position: relative;
+}
+.select-container select {
+  min-width: 8rem;
+}
+.select-container::after {
+  width: 1.2rem;
+  height: 0.8rem;
+  display: block;
+  background: url("./icons/dropdown.svg") no-repeat center/contain;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
 }
 
 .error {

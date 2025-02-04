@@ -26,12 +26,12 @@ h2 {
   font-weight: 500;
 }
 
-p, label, input, .btn {
+p, label, input, select, option, .btn {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-input {
+input, select {
   min-width: 20rem;
   width: fit-content;
 
@@ -46,6 +46,9 @@ input {
   -moz-border-radius: 1rem;
   border-radius: 1rem;
 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   transition: border-color .5s ease;
 
   &:focus {
@@ -55,6 +58,10 @@ input {
   &::placeholder {
     color: $placeholder;
   }
+}
+
+option {
+  color: $darkText;
 }
 
 main {
@@ -70,6 +77,29 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: .5rem;
+}
+
+.select-container {
+  position: relative;
+
+  select {
+    min-width: 8rem;
+  }
+
+  &::after {
+    width: 1.2rem;
+    height: .8rem;
+
+    display: block;
+
+    background: url("./icons/dropdown.svg") no-repeat center / contain;
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
 }
 
 .error {
