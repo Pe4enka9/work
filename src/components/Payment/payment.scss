@@ -1,0 +1,17 @@
+@import "../../variables";
+
+#payment {
+  width: fit-content;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+
+  background-color: $lightAccent;
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}

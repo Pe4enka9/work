@@ -26,11 +26,60 @@ h2 {
   font-weight: 500;
 }
 
-p {
+p, label, input, .btn {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
+input {
+  min-width: 20rem;
+  width: fit-content;
+
+  padding: .7rem 1rem;
+
+  background-color: $background;
+  color: $darkText;
+
+  outline: none;
+  border: .2rem solid $background;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  transition: border-color .5s ease;
+
+  &:focus {
+    border-color: $main;
+  }
+
+  &::placeholder {
+    color: $placeholder;
+  }
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .mb-5 {
   margin-bottom: 5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5rem;
+}
+
+.error {
+  color: $error;
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity .3s ease;
+
+  &.visible {
+    opacity: 1;
+  }
 }

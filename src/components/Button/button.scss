@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.btn {
+  width: fit-content;
+
+  padding: .8rem 1.5rem;
+
+  background-color: $main;
+
+  outline: none;
+  border: none;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  transition: background-color .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainHover;
+  }
+}

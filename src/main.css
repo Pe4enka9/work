@@ -23,13 +23,55 @@ h2 {
   font-weight: 500;
 }
 
-p {
+p, label, input, .btn {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
+input {
+  min-width: 20rem;
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  background-color: #F5F3EF;
+  color: #000000;
+  outline: none;
+  border: 0.2rem solid #F5F3EF;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  transition: border-color 0.5s ease;
+}
+input:focus {
+  border-color: #672CE2;
+}
+input::placeholder {
+  color: #808080;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .mb-5 {
   margin-bottom: 5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.error {
+  color: #d63a3a;
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.error.visible {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

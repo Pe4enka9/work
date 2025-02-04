@@ -1,0 +1,17 @@
+.btn {
+  width: fit-content;
+  padding: 0.8rem 1.5rem;
+  background-color: #672CE2;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #4516A7;
+}
+
+/*# sourceMappingURL=button.css.map */
