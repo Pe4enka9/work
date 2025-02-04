@@ -1,0 +1,13 @@
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #672CE2;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+/*# sourceMappingURL=header.module.css.map */

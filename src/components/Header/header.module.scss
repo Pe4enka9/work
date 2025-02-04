@@ -1,0 +1,17 @@
+@import "../../variables";
+
+header {
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 2rem 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $main;
+
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
