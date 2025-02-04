@@ -2,7 +2,7 @@
   "name": "work",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pe4enka9.github.io/work",
+  "homepage": "https://pe4enka9.github.io/work/",
   "type": "module",
   "scripts": {
     "dev": "vite",
